@@ -29,9 +29,9 @@ const Projects = () => {
     offset: ["start start", "end start"],
   });
 
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 20], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
-  const y = useTransform(scrollYProgress, [10, 1], [0, 100]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
