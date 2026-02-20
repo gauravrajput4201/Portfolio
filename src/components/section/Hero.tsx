@@ -55,7 +55,7 @@ const Hero = () => {
       className="min-h-screen flex items-center justify-center px-8 pt-24 pb-16 relative overflow-hidden"
     >
       <motion.div
-        className="max-w-[1400px] w-full grid gap-16 items-center grid-cols-1 lg:grid-cols-2"
+        className="max-w-350 w-full grid gap-16 items-center grid-cols-1 lg:grid-cols-2"
         style={{ opacity, scale, y }}
       >
         <motion.div
@@ -103,7 +103,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             <motion.span
-              className="bg-gradient-to-r from-[#06b6d4] via-[#8b5cf6] via-[#ec4899] via-[#8b5cf6] to-[#06b6d4] bg-[length:200%_auto] bg-clip-text text-transparent"
+              className="bg-linear-to-r from-[#06b6d4] via-[#8b5cf6] via-[#ec4899] via-[#8b5cf6] to-[#06b6d4] bg-size-[200%_auto] bg-clip-text text-transparent"
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
               }}
@@ -125,7 +125,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.p
-            className="text-[1.1rem] text-white/60 leading-relaxed mb-10 max-w-[600px]"
+            className="text-[1.1rem] text-white/60 leading-relaxed mb-10 max-w-150"
             variants={itemVariants}
           >
             {personalInfo.bio}
@@ -136,7 +136,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             <motion.button
-              className="py-4 px-8 text-[1rem] font-semibold rounded-full border-none cursor-pointer transition-all duration-300 inline-flex items-center gap-2 bg-gradient-to-r from-[#06b6d4] to-[#8b5cf6] text-white shadow-lg shadow-cyan-500/30"
+              className="py-4 px-8 text-[1rem] font-semibold rounded-full border-none cursor-pointer transition-all duration-300 inline-flex items-center gap-2 bg-linear-to-r from-[#06b6d4] to-[#8b5cf6] text-white shadow-lg shadow-cyan-500/30"
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 0 40px rgba(6, 182, 212, 0.6)",
@@ -196,13 +196,13 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          className="relative flex items-center justify-center h-0 lg:h-[600px] lg:order-none order-first"
+          className="relative flex items-center justify-center h-0 lg:h-150 lg:order-0 order-first"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
           <motion.div
-            className="absolute rounded-full blur-[40px] opacity-60 w-[300px] h-[300px] bg-[radial-gradient(circle,rgba(6,182,212,0.6)_0%,rgba(6,182,212,0)_70%)] top-[10%] left-[20%]"
+            className="absolute rounded-full blur-2xl opacity-60 w-75 h-75 bg-[radial-gradient(circle,rgba(6,182,212,0.6)_0%,rgba(6,182,212,0)_70%)] top-[10%] left-[20%]"
             animate={{
               y: [0, -20, 0],
               x: [0, 10, 0],
@@ -214,7 +214,7 @@ const Hero = () => {
             }}
           />
           <motion.div
-            className="absolute rounded-full blur-[40px] opacity-60 w-[250px] h-[250px] bg-[radial-gradient(circle,rgba(139,92,246,0.6)_0%,rgba(139,92,246,0)_70%)] bottom-[20%] right-[15%]"
+            className="absolute rounded-full blur-2xl opacity-60 w-62.5 h-62.5 bg-[radial-gradient(circle,rgba(139,92,246,0.6)_0%,rgba(139,92,246,0)_70%)] bottom-[20%] right-[15%]"
             animate={{
               y: [0, 20, 0],
               x: [0, -10, 0],
@@ -227,7 +227,7 @@ const Hero = () => {
             }}
           />
           <motion.div
-            className="absolute rounded-full blur-[40px] opacity-60 w-[200px] h-[200px] bg-[radial-gradient(circle,rgba(236,72,153,0.5)_0%,rgba(236,72,153,0)_70%)] top-[40%] right-[30%]"
+            className="absolute rounded-full blur-2xl opacity-60 w-50 h-50 bg-[radial-gradient(circle,rgba(236,72,153,0.5)_0%,rgba(236,72,153,0)_70%)] top-[40%] right-[30%]"
             animate={{
               y: [0, -15, 0],
               x: [0, -15, 0],

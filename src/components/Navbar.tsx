@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-// ...existing code...
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,14 +35,14 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-300 ${isScrolled ? 'bg-[rgba(10,10,10,0.8)] backdrop-blur-[20px] border-b border-white/10 py-4' : 'py-6'} px-8`}
+      className={`fixed top-0 left-0 right-0 z-1000 transition-all duration-300 ${isScrolled ? 'bg-[rgba(10,10,10,0.8)] backdrop-blur-[20px] border-b border-white/10 py-4' : 'py-6'} px-8`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
-  <div className="max-w-[1400px] mx-auto flex justify-between items-center gap-8">
+  <div className="max-w-350 mx-auto flex justify-between items-center gap-8">
         <motion.div
-          className="text-[1.5rem] font-bold bg-gradient-to-r from-[#06b6d4] to-[#8b5cf6] bg-clip-text text-transparent cursor-pointer"
+          className="text-[1.5rem] font-bold bg-linear-to-r from-[#06b6d4] to-[#8b5cf6] bg-clip-text text-transparent cursor-pointer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => scrollToSection('hero')}
@@ -63,14 +62,14 @@ const Navbar = () => {
               transition={{ delay: index * 0.1 }}
             >
               {item.label}
-              <span className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-[#06b6d4] to-[#8b5cf6] transition-all duration-300 w-0 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 h-0.5 bg-linear-to-r from-[#06b6d4] to-[#8b5cf6] transition-all duration-300 w-0 group-hover:w-full"></span>
             </motion.button>
           ))}
         </div>
 
         {/* CTA Button */}
         <motion.button
-          className="hidden md:block py-3 px-6 bg-gradient-to-r from-[#06b6d4] to-[#8b5cf6] border-none rounded-full text-white font-semibold text-[0.9rem] cursor-pointer transition-all duration-300"
+          className="hidden md:block py-3 px-6 bg-linear-to-r from-[#06b6d4] to-[#8b5cf6] border-none rounded-full text-white font-semibold text-[0.9rem] cursor-pointer transition-all duration-300"
           whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(6,182,212,0.5)' }}
           whileTap={{ scale: 0.95 }}
           onClick={() => scrollToSection('contact')}

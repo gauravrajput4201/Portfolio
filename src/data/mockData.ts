@@ -8,10 +8,10 @@ export const personalInfo = {
   email: "singhkumargaurav420@gmail.com",
   location: "New Delhi, India",
   availability: "Open to opportunities",
-  // availability: "Open to Frontend & Fullstack Opportunities",
   social: {
     github: "https://github.com/gauravrajput4201",
     linkedin: "https://www.linkedin.com/in/gaurav-kumar-singh-ab7b15165",
+    twitter: "https://twitter.com/gaurav_kumar_singh",
   },
 };
 
@@ -61,50 +61,168 @@ export const skills = [
 // ];
 
 
+// export const experience = [
+//   {
+//     id: 1,
+//     company: "Shipglobal.in",
+//     position: "Software Developer",
+//     duration: "Aug 2025 - Present",
+//     location: "New Delhi, India",
+//     description:
+//       "Leading frontend development for enterprise SaaS platform, improving performance by 40% and implementing advanced animations.",
+//     achievements: [
+//       "Led migration from JavaScript to TypeScript, reducing bugs by 35%",
+//       "Implemented design system using Storybook and Tailwind CSS",
+//       "Mentored 3 junior developers and conducted code reviews",
+//     ],
+//     tech: [
+//       "React",
+//       "Redux",
+//       "JavaScript",
+//       "SCSS",
+//       "Next.js",
+//       "TypeScript",
+//       "Tailwind CSS",
+//       "node.js",
+//       "express.js",
+//       "mongodb",
+//       "JWT Authentication",
+//       "ShadCN UI",
+//       "REST API",
+//       "Webpack",
+//       "Vite",
+//       "Cross-Browser Compatibility",
+//       "Responsive Design",
+//       "Mobile Optimization",
+//       "State Management",
+//       "Render Optimization",
+//       "Component Architecture",
+//     ],
+//   },
+
+//   {
+//     id: 2,
+//     company: "E2E Research Services Pvt Ltd",
+//     position: "Frontend Developer",
+//     duration: "June 2022 - June 2025",
+//     location: "New Delhi, India",
+//     description:
+//       "Built core features for a fintech application serving 100K+ users, focusing on performance optimization and user experience.",
+//     achievements: [
+//       "Reduced initial load time by 60% through code splitting and lazy loading",
+//       "Implemented real-time data visualization using D3.js",
+//       "Built responsive UI components used across 20+ pages",
+//     ],
+//     tech: [
+//       "React",
+//       "Redux",
+//       "JavaScript",
+//       "SCSS",
+//       "Next.js",
+//       "TypeScript",
+//       "Tailwind CSS",
+//       "node.js",
+//       "express.js",
+//       "mongodb",
+//       "Material UI",
+//       "ShadCN UI",
+//       "JWT Authentication",
+//       "REST API",
+//       "Responsive Design",
+
+//     ],
+//   },
+//   // {
+//   //   id: 3,
+//   //   company: "Digital Agency",
+//   //   position: "Junior Frontend Developer",
+//   //   duration: "2020 - 2021",
+//   //   location: "New York, NY",
+//   //   description:
+//   //     "Developed marketing websites and landing pages for various clients, ensuring pixel-perfect implementation.",
+//   //   achievements: [
+//   //     "Delivered 15+ client projects with 98% satisfaction rate",
+//   //     "Implemented SEO best practices, improving client rankings",
+//   //     "Collaborated with designers to create interactive prototypes",
+//   //   ],
+//   //   tech: ["HTML", "CSS", "JavaScript", "jQuery", "WordPress"],
+//   // },
+// ];
 export const experience = [
   {
     id: 1,
-    company: "TechCorp",
-    position: "Senior Frontend Engineer",
-    duration: "2023 - Present",
-    location: "San Francisco, CA",
-    description: "Leading frontend development for enterprise SaaS platform, improving performance by 40% and implementing advanced animations.",
+    company: "ShipGlobal",
+    position: "Software Developer",
+    duration: "Aug 2025 - Present",
+    location: "New Delhi, India",
+    description:
+      "Leading frontend development for an enterprise logistics platform built with React.js and TypeScript, focused on scalable architecture, performance optimization, and operational workflows.",
     achievements: [
-      "Led migration from JavaScript to TypeScript, reducing bugs by 35%",
-      "Implemented design system using Storybook and Tailwind CSS",
-      "Mentored 3 junior developers and conducted code reviews"
+      "Migrated legacy PHP frontend to modern React.js + TypeScript architecture",
+      "Designed reusable component architecture improving maintainability and scalability",
+      "Reduced UI defect rate by 80% through structured frontend architecture and strict TypeScript usage",
+      "Built enterprise workflows for orders, shipments, wallet transactions, and KYC processes",
     ],
-    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+    tech: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Zustand",
+      "Tailwind CSS",
+      "ShadCN UI",
+      "REST API",
+      "Axios",
+      "Fetch API",
+      "JWT Authentication",
+      "Role-Based Access Control",
+      "Component Architecture",
+      "Render Optimization",
+      "State Management",
+      "Webpack",
+      "Vite",
+      "Git",
+    ],
   },
+
   {
     id: 2,
-    company: "StartupXYZ",
-    position: "Frontend Engineer",
-    duration: "2021 - 2023",
-    location: "Remote",
-    description: "Built core features for a fintech application serving 100K+ users, focusing on performance optimization and user experience.",
+    company: "E2E Research Services Pvt Ltd",
+    position: "Frontend Developer",
+    duration: "Jun 2022 - Jun 2025",
+    location: "New Delhi, India",
+    description:
+      "Developed and optimized production-grade SaaS and business web applications using React.js and Next.js with strong focus on performance, scalability, and frontend architecture.",
     achievements: [
-      "Reduced initial load time by 60% through code splitting and lazy loading",
-      "Implemented real-time data visualization using D3.js",
-      "Built responsive UI components used across 20+ pages"
+      "Improved application performance by 20% through render optimization and reducing unnecessary re-renders",
+      "Implemented scalable state management using Redux and Zustand",
+      "Led REST API integration and frontend-backend communication with caching and authentication handling",
+      "Built 100+ reusable, responsive UI components, improving maintainability and ensuring consistent performance across 100% of target devices.",
     ],
-    tech: ["React", "Redux", "JavaScript", "SCSS"]
+    tech: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Redux",
+      "Zustand",
+      "React Router",
+      "Tailwind CSS",
+      "Material UI",
+      "ShadCN UI",
+      "REST API",
+      "Axios",
+      "Fetch API",
+      "JWT Authentication",
+      "Responsive Design",
+      "Cross-Browser Compatibility",
+      "Render Optimization",
+      "Azure",
+      "Git",
+    ],
   },
-  {
-    id: 3,
-    company: "Digital Agency",
-    position: "Junior Frontend Developer",
-    duration: "2020 - 2021",
-    location: "New York, NY",
-    description: "Developed marketing websites and landing pages for various clients, ensuring pixel-perfect implementation.",
-    achievements: [
-      "Delivered 15+ client projects with 98% satisfaction rate",
-      "Implemented SEO best practices, improving client rankings",
-      "Collaborated with designers to create interactive prototypes"
-    ],
-    tech: ["HTML", "CSS", "JavaScript", "jQuery", "WordPress"]
-  }
 ];
+
 
 export const projects = [
   {
@@ -173,6 +291,7 @@ export const projects = [
     color: "#ec4899"
   }
 ];
+
 
 export const testimonials = [
   {
