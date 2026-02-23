@@ -43,14 +43,33 @@ const Contact = () => {
     },
   });
 
-  const onSubmit = (data: ContactForm) => {
-    // Mock submission
-    console.log("Form submitted:", data);
+  const [apiError, setApiError] = useState<string | null>(null);
+  const [apiSuccess, setApiSuccess] = useState<string | null>(null);
+
+  const onSubmit = async (data: ContactForm) => {
+    setApiError(null);
+    setApiSuccess(null);
     setIsSubmitted(true);
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const result = await response.json();
+      if (response.ok && result.success) {
+        setApiSuccess(
+          "✅ Your message has been sent! Thank you for reaching out. 📬\nI have received your message and will reply soon! 😊😊😊😊",
+        );
+        reset();
+      } else {
+        setApiError(result.error ? JSON.stringify(result.error) : 'Failed to send message.');
+      }
+    } catch (err) {
+      setApiError('Something went wrong. Please try again later.');
+    } finally {
       setIsSubmitted(false);
-      reset();
-    }, 3000);
+    }
   };
 
   const containerVariants = {
@@ -263,6 +282,12 @@ const Contact = () => {
                   </span>
                 )}
               </div>
+              {apiError && (
+                <div className="text-red-400 text-sm mb-2 text-center">{apiError}</div>
+              )}
+              {apiSuccess && (
+                <div className="text-green-400 text-sm mb-2 text-center">{apiSuccess}</div>
+              )}
               <motion.button
                 type="submit"
                 className="py-4 px-8 bg-[linear-gradient(135deg,#06b6d4_0%,#8b5cf6_100%)] border-none rounded-[50px] text-white text-[1rem] font-semibold cursor-pointer transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_4px_15px_rgba(6,182,212,0.3)] disabled:opacity-70 disabled:cursor-not-allowed hover:shadow-[0_0_40px_rgba(6,182,212,0.6)]"
@@ -274,7 +299,7 @@ const Contact = () => {
                 disabled={isSubmitted}
               >
                 {isSubmitted ? (
-                  "Message Sent!"
+                  "Sending..."
                 ) : (
                   <>
                     <Send size={20} />
