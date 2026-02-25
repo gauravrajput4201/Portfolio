@@ -15,17 +15,44 @@ export const personalInfo = {
   },
 };
 
+// export const skills = [
+//   { name: "React.js", level: 95, category: "frontend" },
+//   { name: "Next.js", level: 90, category: "frontend" },
+//   { name: "TypeScript", level: 92, category: "language" },
+//   { name: "JavaScript (ES6+)", level: 95, category: "language" },
+//   { name: "Tailwind CSS", level: 90, category: "styling" },
+//   { name: "Framer Motion", level: 85, category: "animation" },
+//   { name: "Redux/Zustand", level: 88, category: "state" },
+//   { name: "REST APIs", level: 92, category: "backend" },
+//   { name: "Git & GitHub", level: 90, category: "tools" },
+//   { name: "Webpack/Vite", level: 82, category: "tools" }
+// ];
 export const skills = [
-  { name: "React.js", level: 95, category: "frontend" },
-  { name: "Next.js", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 92, category: "language" },
-  { name: "JavaScript (ES6+)", level: 95, category: "language" },
-  { name: "Tailwind CSS", level: 90, category: "styling" },
-  { name: "Framer Motion", level: 85, category: "animation" },
-  { name: "Redux/Zustand", level: 88, category: "state" },
-  { name: "REST APIs", level: 92, category: "backend" },
-  { name: "Git & GitHub", level: 90, category: "tools" },
-  { name: "Webpack/Vite", level: 82, category: "tools" }
+  // Core Frontend
+  { name: "React.js", category: "frontend" },
+  { name: "Next.js", category: "frontend" },
+  { name: "TypeScript", category: "frontend" },
+  { name: "JavaScript (ES6+)", category: "frontend" },
+
+  // UI
+  { name: "Tailwind CSS", category: "ui" },
+  { name: "ShadCN UI", category: "ui" },
+  { name: "Framer Motion", category: "ui" },
+
+  // State & APIs
+  { name: "Redux", category: "state" },
+  { name: "Zustand", category: "state" },
+  { name: "REST APIs", category: "state" },
+
+  // Architecture
+  { name: "Component Architecture", category: "architecture" },
+  { name: "Performance Optimization", category: "architecture" },
+  { name: "Code Splitting", category: "architecture" },
+  { name: "Lazy Loading", category: "architecture" },
+
+  // Tools
+  { name: "Git & GitHub", category: "tools" },
+  { name: "Vite / Webpack", category: "tools" },
 ];
 // export const skills = [
 //   { name: "React.js", category: "frontend" },
