@@ -35,7 +35,7 @@ const Skills = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.2,
         ease: easeOut,
       },
     },
@@ -75,7 +75,7 @@ const Skills = () => {
                   y: -5,
                   boxShadow: "0 12px 40px rgba(6, 182, 212, 0.3)",
                 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.1 }}
               >
                 <h3 className="text-lg font-semibold text-white">
                   {skill.name}

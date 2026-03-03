@@ -254,71 +254,120 @@ export const experience = [
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A modern e-commerce platform with real-time inventory management, advanced search, and seamless checkout experience.",
-    longDescription: "Built a full-featured e-commerce platform handling 10K+ daily transactions. Implemented complex filtering, real-time inventory updates, and integrated payment gateways.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
-    tech: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS"],
+    title: "ENGAME – Subscription-Based Widget Commerce Platform",
+    description:
+      "Modular, subscription-driven eCommerce platform with embeddable widgets, secure payments, OAuth authentication, and admin analytics.",
+    longDescription:
+      "Developed a subscription-based eCommerce platform built around modular, reusable commerce widgets using Next.js, Tailwind CSS, ShadCN, and Zustand. Designed product browsing and checkout as configurable UI modules that can be extended or embedded. Implemented recurring subscription logic with secure payment gateway integration and OAuth (Google) authentication. Built role-based access control for admin and users to manage subscriptions, orders, analytics, and customer data. Optimized routing and performance to ensure fast navigation and scalable user experience. Backend powered by Node.js, Express.js, MongoDB, and Docker for containerized deployment.",
+    image:
+      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "ShadCN",
+      "Zustand",
+      "Axios",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Docker",
+      "OAuth (Google)",
+    ],
     category: "Web Application",
-    year: "2024",
-    link: "https://example.com",
-    github: "https://github.com",
+    year: "2023-2024",
+    link: "",
+    github: "",
     featured: true,
-    color: "#06b6d4"
+    color: "#0ea5e9",
   },
   {
     id: 2,
-    title: "AI Dashboard",
-    description: "Interactive analytics dashboard with AI-powered insights, real-time data visualization, and predictive analytics.",
-    longDescription: "Created an enterprise dashboard for data visualization with ML-powered insights. Features include customizable widgets, real-time updates, and export capabilities.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-    tech: ["React", "D3.js", "Python", "TensorFlow", "WebSocket"],
+    title: "Raven Dashboard",
+    description:
+      "Interactive data visualization dashboard with role-based authentication, secure API integration, and dynamic analytics.",
+    longDescription:
+      "Built an interactive data visualization dashboard using React, Redux, TypeScript, MUI, SCSS, and Highcharts. Designed dynamic bar, line, and pie chart visualizations along with structured data tables for complex dataset analysis. Implemented role-based authentication and secure access control for multi-user environments. Integrated REST APIs using Axios for efficient data fetching and authentication. Backend powered by Node.js, Express.js, and MongoDB to ensure scalable and secure architecture.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    tech: [
+      "React.js",
+      "Redux",
+      "TypeScript",
+      "Material-UI",
+      "SCSS",
+      "Highcharts",
+      "Axios",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
     category: "Dashboard",
-    year: "2024",
-    link: "https://example.com",
+    year: "2022-Present",
+    link: "",
+    github: "",
     featured: true,
-    color: "#8b5cf6"
+    color: "#7c3aed",
   },
   {
     id: 3,
     title: "Design System",
-    description: "Comprehensive design system with 50+ components, documentation, and theming support for enterprise products.",
-    longDescription: "Developed a scalable design system used across multiple products. Includes accessible components, dark mode support, and comprehensive documentation.",
-    image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=800&q=80",
+    description:
+      "Comprehensive design system with 50+ components, documentation, and theming support for enterprise products.",
+    longDescription:
+      "Developed a scalable design system used across multiple products. Includes accessible components, dark mode support, and comprehensive documentation.",
+    image:
+      "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=800&q=80",
     tech: ["React", "Storybook", "TypeScript", "Styled Components"],
     category: "Design System",
     year: "2023",
     github: "https://github.com",
     featured: true,
-    color: "#10b981"
+    color: "#10b981",
   },
   {
     id: 4,
-    title: "Social Media App",
-    description: "Real-time social platform with live messaging, media sharing, and interactive feeds.",
-    longDescription: "Built a social media application with real-time messaging, image/video uploads, and engagement tracking. Handles thousands of concurrent users.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
-    tech: ["Next.js", "Socket.io", "MongoDB", "AWS S3"],
-    category: "Web Application",
-    year: "2023",
+    title: "Timexa",
+    description:
+      "Full-stack office time tracking system with check-in/out logging, leave management, OTP verification, JWT authentication, and email-based reporting.",
+    longDescription:
+      "Built a full-stack time tracking application that records check-in and check-out events, calculates daily work durations, and manages leave, holidays, and week-offs. Implemented secure authentication using OTP verification, JWT-based sessions, and route protection with Guards. Designed REST APIs for logs, analytics, and user management with proper validation and error handling. Integrated scheduled notification reminders, offline storage, and automated email reports summarizing weekly/monthly work statistics. Used aggregation queries to compute total hours, averages, and attendance metrics with enforced business rules to prevent invalid states such as duplicate logins or missing logouts.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    tech: [
+      "React Native (Expo)",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB (Mongoose)",
+      "JWT Authentication",
+      "Role-based Guards",
+      "OTP Verification",
+      "AsyncStorage",
+      "Expo Notifications",
+      "Nodemailer",
+    ],
+    category: "Android Application",
+    year: "2026",
     link: "https://example.com",
-    color: "#f59e0b"
+    color: "#f59e0b",
   },
   {
     id: 5,
     title: "Portfolio Generator",
-    description: "SaaS tool for developers to create stunning portfolios with templates and customization options.",
-    longDescription: "Created a no-code portfolio builder with drag-and-drop interface, multiple templates, and one-click deployment.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    description:
+      "SaaS tool for developers to create stunning portfolios with templates and customization options.",
+    longDescription:
+      "Created a no-code portfolio builder with drag-and-drop interface, multiple templates, and one-click deployment.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     tech: ["React", "Firebase", "Vercel", "TailwindCSS"],
     category: "SaaS",
     year: "2023",
     link: "https://example.com",
     github: "https://github.com",
-    color: "#ec4899"
-  }
+    color: "#ec4899",
+  },
 ];
-
 
 export const testimonials = [
   {
