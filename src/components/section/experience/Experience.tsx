@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { easeOut, motion, useInView } from 'framer-motion';
 
 import { Briefcase, Calendar, MapPin, CheckCircle } from 'lucide-react';

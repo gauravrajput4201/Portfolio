@@ -1,7 +1,5 @@
 
 "use client";
-
-
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, easeInOut } from 'framer-motion';
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';

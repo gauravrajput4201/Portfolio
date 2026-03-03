@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { i } from "framer-motion/client";
 import { Github, Linkedin, Twitter } from "lucide-react";
-import { Interface } from "readline";
 
 interface SocialLinksType {
   github: string;

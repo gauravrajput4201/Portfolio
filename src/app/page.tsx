@@ -3,20 +3,25 @@ import Contact from "@/components/section/contact/Contact";
 import Experience from "@/components/section/experience/Experience";
 import Hero from "@/components/section/hero/Hero";
 import Projects from "@/components/section/projects/Projects";
-import LoopLogo from "@/components/section/skills/LoopLogo";
+import Stats from "@/components/section/stats/Stats";
 import Skills from "@/components/section/skills/Skills";
+import Navbar from "@/components/Navbar";
 
 
 export default function Home() {
   return (
-    <div className="h-screen ">
-      <Hero />
-      <About />
-      <Skills />
-      {/* <LoopLogo /> */}
-      <Experience />
-      <Projects />
-      <Contact />
-    </div>
+    <>
+      <Navbar />
+      <div className="h-screen ">
+        <Hero />
+        <About />
+        <Skills />
+        {/* <LoopLogo /> */}
+        <Experience />
+        <Projects />
+        <Stats />
+        <Contact />
+      </div>
+    </>
   );
 }

@@ -1,6 +1,5 @@
 "use client";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";

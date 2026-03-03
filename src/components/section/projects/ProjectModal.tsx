@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github, X } from "lucide-react";
 import { Project } from "./Projects";
+import Image from "next/image";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -33,9 +34,11 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
         >
           <X size={24} />
         </button>
-        <img
+        <Image
           src={project.image}
           alt={project.title}
+          width={800}
+          height={600}
           className="w-full h-75 object-cover rounded-t-[1.5rem]"
         />
         <div className="p-8">
