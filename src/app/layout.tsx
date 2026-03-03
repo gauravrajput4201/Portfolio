@@ -48,6 +48,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gauravsingh.dev",
   },
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

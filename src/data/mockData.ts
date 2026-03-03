@@ -1,5 +1,5 @@
 // Mock data for portfolio
-
+import { Boxes, Rocket, Award, Zap } from 'lucide-react';
 export const personalInfo = {
   name: "Gaurav Singh",
   title: "Frontend Engineer",
@@ -33,6 +33,11 @@ export const skills = [
   { name: "Next.js", category: "frontend" },
   { name: "TypeScript", category: "frontend" },
   { name: "JavaScript (ES6+)", category: "frontend" },
+  { name: "React Native", category: "mobile" },
+  { name: "Node.js", category: "backend" },
+  { name: "NestJS", category: "backend" },
+  { name: "MongoDB", category: "database" },
+  { name: "JWT Authentication", category: "backend" },
 
   // UI
   { name: "Tailwind CSS", category: "ui" },
@@ -43,6 +48,7 @@ export const skills = [
   { name: "Redux", category: "state" },
   { name: "Zustand", category: "state" },
   { name: "REST APIs", category: "state" },
+  { name: "AsyncStorage", category: "mobile" },
 
   // Architecture
   { name: "Component Architecture", category: "architecture" },
@@ -53,6 +59,7 @@ export const skills = [
   // Tools
   { name: "Git & GitHub", category: "tools" },
   { name: "Vite / Webpack", category: "tools" },
+  { name: "Expo", category: "mobile" },
 ];
 // export const skills = [
 //   { name: "React.js", category: "frontend" },
@@ -69,12 +76,12 @@ export const skills = [
 //   { name: "Material UI (MUI)", category: "styling" },
 //   { name: "ShadCN UI", category: "styling" },
 
-//   { name: "Node.js", category: "backend" },
-//   { name: "NestJS", category: "backend" },
-//   { name: "MongoDB", category: "database" },
-//   { name: "REST APIs", category: "backend" },
-//   { name: "JWT Authentication", category: "backend" },
-//   { name: "Google OAuth", category: "backend" },
+  // { name: "Node.js", category: "backend" },
+  // { name: "NestJS", category: "backend" },
+  // { name: "MongoDB", category: "database" },
+  // { name: "REST APIs", category: "backend" },
+  // { name: "JWT Authentication", category: "backend" },
+  // { name: "Google OAuth", category: "backend" },
 
 //   { name: "Axios", category: "tools" },
 //   { name: "Fetch API", category: "tools" },
@@ -85,95 +92,6 @@ export const skills = [
 //   { name: "Azure", category: "tools" },
 //   { name: "Expo", category: "mobile" },
 //   { name: "AsyncStorage", category: "mobile" },
-// ];
-
-
-// export const experience = [
-//   {
-//     id: 1,
-//     company: "Shipglobal.in",
-//     position: "Software Developer",
-//     duration: "Aug 2025 - Present",
-//     location: "New Delhi, India",
-//     description:
-//       "Leading frontend development for enterprise SaaS platform, improving performance by 40% and implementing advanced animations.",
-//     achievements: [
-//       "Led migration from JavaScript to TypeScript, reducing bugs by 35%",
-//       "Implemented design system using Storybook and Tailwind CSS",
-//       "Mentored 3 junior developers and conducted code reviews",
-//     ],
-//     tech: [
-//       "React",
-//       "Redux",
-//       "JavaScript",
-//       "SCSS",
-//       "Next.js",
-//       "TypeScript",
-//       "Tailwind CSS",
-//       "node.js",
-//       "express.js",
-//       "mongodb",
-//       "JWT Authentication",
-//       "ShadCN UI",
-//       "REST API",
-//       "Webpack",
-//       "Vite",
-//       "Cross-Browser Compatibility",
-//       "Responsive Design",
-//       "Mobile Optimization",
-//       "State Management",
-//       "Render Optimization",
-//       "Component Architecture",
-//     ],
-//   },
-
-//   {
-//     id: 2,
-//     company: "E2E Research Services Pvt Ltd",
-//     position: "Frontend Developer",
-//     duration: "June 2022 - June 2025",
-//     location: "New Delhi, India",
-//     description:
-//       "Built core features for a fintech application serving 100K+ users, focusing on performance optimization and user experience.",
-//     achievements: [
-//       "Reduced initial load time by 60% through code splitting and lazy loading",
-//       "Implemented real-time data visualization using D3.js",
-//       "Built responsive UI components used across 20+ pages",
-//     ],
-//     tech: [
-//       "React",
-//       "Redux",
-//       "JavaScript",
-//       "SCSS",
-//       "Next.js",
-//       "TypeScript",
-//       "Tailwind CSS",
-//       "node.js",
-//       "express.js",
-//       "mongodb",
-//       "Material UI",
-//       "ShadCN UI",
-//       "JWT Authentication",
-//       "REST API",
-//       "Responsive Design",
-
-//     ],
-//   },
-//   // {
-//   //   id: 3,
-//   //   company: "Digital Agency",
-//   //   position: "Junior Frontend Developer",
-//   //   duration: "2020 - 2021",
-//   //   location: "New York, NY",
-//   //   description:
-//   //     "Developed marketing websites and landing pages for various clients, ensuring pixel-perfect implementation.",
-//   //   achievements: [
-//   //     "Delivered 15+ client projects with 98% satisfaction rate",
-//   //     "Implemented SEO best practices, improving client rankings",
-//   //     "Collaborated with designers to create interactive prototypes",
-//   //   ],
-//   //   tech: ["HTML", "CSS", "JavaScript", "jQuery", "WordPress"],
-//   // },
 // ];
 export const experience = [
   {
@@ -400,4 +318,36 @@ export const testimonials = [
     image: "https://i.pravatar.cc/150?img=3",
     text: "Alex bridges the gap between design and development perfectly. He understands design principles and translates them into beautiful, functional interfaces with seamless animations."
   }
+];
+
+export const stats = [
+  {
+    id: 1,
+    icon: Rocket,
+    number: "5+",
+    label: "Production-Ready Applications",
+    description: "Dashboards, e-commerce & logistics platforms",
+  },
+  {
+    id: 2,
+    icon: Boxes,
+    number: "150+",
+    label: "Reusable Components",
+    description: "Modular and scalable UI architecture",
+  },
+  // {
+  //   id: 3,
+  //   icon: Code2,
+  //   number: "100000+",
+  //   label: "Lines of Code",
+  //   description: "Clean, maintainable code across multiple projects",
+  // },
+  {
+    id: 3,
+    icon: Zap,
+    number: "100%",
+    label: "Responsive Design Coverage",
+    description: "Optimized for all devices & major browsers",
+  },
+
 ];

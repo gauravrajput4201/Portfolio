@@ -3,7 +3,8 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { easeOut } from 'framer-motion';
-import { Code2, Boxes, Rocket, Award } from 'lucide-react';
+import { stats } from '@/data/mockData';
+
 
 const Stats = () => {
   const ref = useRef<HTMLElement | null>(null);
@@ -31,36 +32,7 @@ const Stats = () => {
     },
   };
 
-  const stats = [
-    {
-      id: 1,
-      icon: Code2,
-      number: "10000+",
-      label: "Lines of Code",
-      description: "Clean, maintainable code across multiple projects",
-    },
-    {
-      id: 2,
-      icon: Boxes,
-      number: "500+",
-      label: "Reusable Components",
-      description: "Modular and scalable component library",
-    },
-    {
-      id: 3,
-      icon: Rocket,
-      number: "5+",
-      label: "Production Projects",
-      description: "Delivered and deployed to real users",
-    },
-    {
-      id: 4,
-      icon: Award,
-      number: "100%",
-      label: "Client Satisfaction",
-      description: "Committed to exceeding expectations",
-    },
-  ];
+  
 
   return (
     <section
@@ -81,7 +53,7 @@ const Stats = () => {
           <div className="w-20 h-1 bg-linear-to-r from-[#06b6d4] to-[#8b5cf6] mx-auto rounded" />
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {stats.map((stat) => {
             const IconComponent = stat.icon;
             return (
