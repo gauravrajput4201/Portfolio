@@ -4,6 +4,7 @@ import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { easeOut } from 'framer-motion';
 import { MapPin, Calendar, Award } from 'lucide-react';
 import { personalInfo } from '@/data/mockData';
+import Image from 'next/image';
 
 const About = () => {
   const ref = useRef<HTMLElement | null>(null);
@@ -134,10 +135,12 @@ const About = () => {
                   ease: 'easeInOut',
                 }}
               />
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80"
                 alt="Coding workspace"
                 className="w-full h-full object-cover relative z-2"
+                width={600}
+                height={400}
               />
               <div className="absolute inset-0 bg-linear-to-br from-[#06b6d4]/20 to-[#8b5cf6]/20 z-3" />
             </div>
