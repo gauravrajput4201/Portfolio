@@ -259,8 +259,7 @@ export const projects = [
       "Modular, subscription-driven eCommerce platform with embeddable widgets, secure payments, OAuth authentication, and admin analytics.",
     longDescription:
       "Developed a subscription-based eCommerce platform built around modular, reusable commerce widgets using Next.js, Tailwind CSS, ShadCN, and Zustand. Designed product browsing and checkout as configurable UI modules that can be extended or embedded. Implemented recurring subscription logic with secure payment gateway integration and OAuth (Google) authentication. Built role-based access control for admin and users to manage subscriptions, orders, analytics, and customer data. Optimized routing and performance to ensure fast navigation and scalable user experience. Backend powered by Node.js, Express.js, MongoDB, and Docker for containerized deployment.",
-    image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+    image: "/images/engame.jpg",
     tech: [
       "Next.js",
       "Tailwind CSS",
@@ -277,7 +276,7 @@ export const projects = [
     year: "2023-2024",
     link: "",
     github: "",
-    featured: true,
+    featured: false,
     color: "#0ea5e9",
   },
   {
@@ -302,37 +301,21 @@ export const projects = [
       "MongoDB",
     ],
     category: "Dashboard",
-    year: "2022-Present",
+    year: "2022-2025",
     link: "",
     github: "",
-    featured: true,
+    featured: false,
     color: "#7c3aed",
   },
+
   {
     id: 3,
-    title: "Design System",
-    description:
-      "Comprehensive design system with 50+ components, documentation, and theming support for enterprise products.",
-    longDescription:
-      "Developed a scalable design system used across multiple products. Includes accessible components, dark mode support, and comprehensive documentation.",
-    image:
-      "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=800&q=80",
-    tech: ["React", "Storybook", "TypeScript", "Styled Components"],
-    category: "Design System",
-    year: "2023",
-    github: "https://github.com",
-    featured: true,
-    color: "#10b981",
-  },
-  {
-    id: 4,
     title: "Timexa",
     description:
       "Full-stack office time tracking system with check-in/out logging, leave management, OTP verification, JWT authentication, and email-based reporting.",
     longDescription:
       "Built a full-stack time tracking application that records check-in and check-out events, calculates daily work durations, and manages leave, holidays, and week-offs. Implemented secure authentication using OTP verification, JWT-based sessions, and route protection with Guards. Designed REST APIs for logs, analytics, and user management with proper validation and error handling. Integrated scheduled notification reminders, offline storage, and automated email reports summarizing weekly/monthly work statistics. Used aggregation queries to compute total hours, averages, and attendance metrics with enforced business rules to prevent invalid states such as duplicate logins or missing logouts.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    image: "/images/timexa.png",
     tech: [
       "React Native (Expo)",
       "TypeScript",
@@ -348,26 +331,49 @@ export const projects = [
     ],
     category: "Android Application",
     year: "2026",
-    link: "https://example.com",
+    // link: "https://github.com/gauravrajput4201/Timexa",
+    github: "https://github.com/gauravrajput4201/Timexa",
     color: "#f59e0b",
   },
   {
-    id: 5,
-    title: "Portfolio Generator",
+    id: 4,
+    title: "Personal Portfolio Website",
     description:
-      "SaaS tool for developers to create stunning portfolios with templates and customization options.",
+      "A professional portfolio website built with Next.js and TypeScript to showcase projects, skills, and frontend engineering approach.",
     longDescription:
-      "Created a no-code portfolio builder with drag-and-drop interface, multiple templates, and one-click deployment.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    tech: ["React", "Firebase", "Vercel", "TailwindCSS"],
-    category: "SaaS",
-    year: "2023",
-    link: "https://example.com",
-    github: "https://github.com",
+      "Designed and developed a highly responsive personal portfolio using Next.js and TypeScript with clean frontend architecture and scalable component structure. The site highlights real projects, professional experience, and technical skills, with optimized routing, modern styling, and maintainable code organization. Built with a focus on performance, accessibility, and clean UI to leave a professional first impression.",
+    image: "/images/portfolio.png",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Vercel Deployment",
+      "TailwindCSS",
+      "Framer Motion",
+    ],
+    category: "Web Application",
+    year: "2026",
+    link: "https://github.com/gauravrajput4201/Portfolio",
+    github: "https://github.com/gauravrajput4201/Portfolio",
     color: "#ec4899",
   },
+  {
+    id: 5,
+    title: "Design System",
+    description:
+      "Comprehensive design system with 50+ components, documentation, and theming support for enterprise products.",
+    longDescription:
+      "Developed a scalable design system used across multiple products. Includes accessible components, dark mode support, and comprehensive documentation.",
+    image:
+      "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=800&q=80",
+    tech: ["React", "Storybook", "TypeScript", "Styled Components"],
+    category: "Design System",
+    year: "2023",
+    github: "https://github.com",
+    featured: false,
+    color: "#10b981",
+  },
 ];
+
 
 export const testimonials = [
   {

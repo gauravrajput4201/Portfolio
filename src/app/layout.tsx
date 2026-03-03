@@ -4,7 +4,6 @@ import "./globals.css";
 import ScrollEffects from "@/components/ScrollEffects";
 import SplashCursor from "@/components/SplashCursor";
 import AnimatedBackground from "@/components/AnimatedBackground";
-import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +16,38 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gaurav Singh - Portfolio",
-  description: "Welcome to my portfolio! I'm Gaurav Singh, a passionate software developer with expertise in web development, mobile app development. Explore my projects, skills, and experience to see how I can contribute to your next project.",
+  title: "Gaurav Singh - Frontend Engineer & Full Stack Developer",
+  description: "Gaurav Singh is a passionate Frontend Engineer with 3.5+ years of experience in React.js, Next.js, and TypeScript. Explore my projects, skills, and experience in web development.",
+  keywords: "Frontend Engineer, React Developer, Next.js, TypeScript, Web Developer, Full Stack Developer, JavaScript, Portfolio",
+  authors: [{ name: "Gaurav Singh", url: "https://gauravsingh.dev" }],
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://gauravsingh.dev",
+    title: "Gaurav Singh - Frontend Engineer & Full Stack Developer",
+    description: "Gaurav Singh is a passionate Frontend Engineer with 3.5+ years of experience in React.js, Next.js, and TypeScript. Explore my projects, skills, and experience in web development.",
+    siteName: "Gaurav Singh Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gaurav Singh - Frontend Engineer & Full Stack Developer",
+    description: "Explore my portfolio and projects",
+    creator: "@gaurav_kumar_singh",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://gauravsingh.dev",
+  },
 };
 
 export default function RootLayout({
@@ -34,7 +63,7 @@ export default function RootLayout({
         <AnimatedBackground />  
         <SplashCursor />
         <ScrollEffects />
-        <Navbar />  
+      
         {children}
       </body>
     </html>
