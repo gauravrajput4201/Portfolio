@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   title: "Gaurav Singh - Frontend Engineer & Full Stack Developer",
   description: "Gaurav Singh is a passionate Frontend Engineer with 3.5+ years of experience in React.js, Next.js, and TypeScript. Explore my projects, skills, and experience in web development.",
   keywords: "Frontend Engineer, React Developer, Next.js, TypeScript, Web Developer, Full Stack Developer, JavaScript, Portfolio",
-  authors: [{ name: "Gaurav Singh", url: "https://gauravsingh.dev" }],
+  authors: [{ name: "Gaurav Singh", url: "https://gaurav-singh4-yoe-portfolio.vercel.app" }],
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://gauravsingh.dev",
+    url: "https://gaurav-singh4-yoe-portfolio.vercel.app",
     title: "Gaurav Singh - Frontend Engineer & Full Stack Developer",
     description: "Gaurav Singh is a passionate Frontend Engineer with 3.5+ years of experience in React.js, Next.js, and TypeScript. Explore my projects, skills, and experience in web development.",
     siteName: "Gaurav Singh Portfolio",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://gauravsingh.dev",
+    canonical: "https://gaurav-singh4-yoe-portfolio.vercel.app",
   },
   icons: {
     icon: "/favicon.svg",

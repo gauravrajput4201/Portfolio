@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api', '/.next'],
     },
-    sitemap: 'https://gauravsingh.dev/sitemap.xml',
+    sitemap: 'https://gaurav-singh4-yoe-portfolio.vercel.app/sitemap.xml',
   };
 }
