@@ -46,7 +46,7 @@ const Skills = () => {
       <section
         id="skills"
         ref={ref}
-        className="py-24 px-8 relative bg-black/30"
+        className="py-24 px-8 bp-5 relative bg-black/30"
       >
         <motion.div
           className="max-w-350 mx-auto"

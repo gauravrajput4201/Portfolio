@@ -6,6 +6,7 @@ import Projects from "@/components/section/projects/Projects";
 import Stats from "@/components/section/stats/Stats";
 import Skills from "@/components/section/skills/Skills";
 import Navbar from "@/components/Navbar";
+import LoopLogo from "@/components/section/skills/LoopLogo";
 
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
-        {/* <LoopLogo /> */}
+        <LoopLogo />
         <Experience />
         <Projects />
         <Stats />

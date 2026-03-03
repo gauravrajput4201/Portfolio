@@ -61,7 +61,7 @@ const Projects = () => {
     <section
       id="projects"
       ref={ref}
-      className="relative py-24 px-8 bg-[rgba(0,0,0,0.3)]"
+      className="relative py-24 px-8 bg-[rgba(0,0,0,0.23)]"
     >
       <motion.div
         className="max-w-350 mx-auto"
