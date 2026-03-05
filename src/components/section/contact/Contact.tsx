@@ -70,9 +70,9 @@ import ContactInfo from "./ContactInfo";
           <p className="text-[rgba(255,255,255,0.5)] text-[0.9rem] my-1">
             © {year} {personalInfo.name}. All rights reserved.
           </p>
-          <p className="text-[rgba(255,255,255,0.5)] text-[0.9rem] my-1">
+          {/* <p className="text-[rgba(255,255,255,0.5)] text-[0.9rem] my-1">
             Built with Next.js, Node.js, Framer Motion & Tailwind CSS
-          </p>
+          </p> */}
         </footer>
       </section>
     );
