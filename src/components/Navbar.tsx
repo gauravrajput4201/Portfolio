@@ -35,22 +35,21 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-1000 transition-all duration-300 ${isScrolled ? 'bg-[rgba(10,10,10,0.8)] backdrop-blur-[20px] border-b border-white/10 py-4' : 'py-6'} px-8`}
+      className={`fixed top-0 left-0 right-0 z-1000 transition-all duration-300 ${isScrolled || isMobileMenuOpen ? "bg-[rgba(10,10,10,0.8)] backdrop-blur-[20px] border-b border-white/10 py-4" : "py-6"} px-8`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
-  <div className="max-w-350 mx-auto flex justify-between items-center gap-8">
+      <div className="max-w-350 mx-auto flex justify-between items-center gap-8">
         <motion.div
           className="text-[1.5rem] font-bold bg-linear-to-r from-[#06b6d4] to-[#8b5cf6] bg-clip-text text-transparent cursor-pointer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => scrollToSection('hero')}
+          onClick={() => scrollToSection("hero")}
         >
           <span className="font-inter tracking-tight">GS</span>
         </motion.div>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8 items-center">
           {navItems.map((item, index) => (
             <motion.button
@@ -67,12 +66,14 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* CTA Button */}
         <motion.button
           className="hidden md:block py-3 px-6 bg-linear-to-r from-[#06b6d4] to-[#8b5cf6] border-none rounded-full text-white font-semibold text-[0.9rem] cursor-pointer transition-all duration-300"
-          whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(6,182,212,0.5)' }}
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0 0 30px rgba(6,182,212,0.5)",
+          }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => scrollToSection('contact')}
+          onClick={() => scrollToSection("contact")}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
@@ -80,7 +81,6 @@ const Navbar = () => {
           Let's Talk
         </motion.button>
 
-        {/* Mobile Menu Toggle */}
         <button
           className="block md:hidden bg-none border-none text-white cursor-pointer p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -90,12 +90,11 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <motion.div
-          className="flex flex-col gap-4 py-6 border-t border-white/10 mt-4 md:hidden"
+          className="flex flex-col gap-4 py-6 border-t border-white/10 mt-4 md:hidden "
           initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: 'auto' }}
+          animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.3 }}
         >
