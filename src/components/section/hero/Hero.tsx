@@ -53,7 +53,7 @@ const Hero = () => {
       className="min-h-screen flex items-center justify-center px-8 pt-24 pb-16 relative overflow-hidden"
     >
       <motion.div
-        className="max-w-350 w-full grid gap-16 items-center grid-cols-1 lg:grid-cols-2"
+        className="max-w-350 w-full grid gap-32 items-center grid-cols-1 lg:grid-cols-2"
         style={{ opacity, scale, y }}
       >
         <motion.div
@@ -123,7 +123,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.p
-            className="text-[1.1rem] text-white/60 leading-relaxed mb-10 max-w-150"
+            className="text-[1.1rem] text-white/60 leading-relaxed mb-10 "
             variants={itemVariants}
           >
             {personalInfo.bio}
@@ -144,14 +144,14 @@ const Hero = () => {
             >
               View My Work
             </motion.button>
-            <motion.button
+            {/* <motion.button
               className="py-4 px-8 text-[1rem] font-semibold rounded-full border-2 border-[#06b6d4] cursor-pointer transition-all duration-300 inline-flex items-center gap-2 bg-transparent text-white hover:bg-cyan-500/10 hover:border-[#8b5cf6]"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection("contact")}
             >
               Get In Touch
-            </motion.button>
+            </motion.button> */}
             <a
               href="/GauravSingh.pdf"
               download

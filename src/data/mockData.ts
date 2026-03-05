@@ -4,7 +4,7 @@ export const personalInfo = {
   name: "Gaurav Singh",
   title: "Frontend Engineer",
   tagline: "Crafting Premium Digital Experiences",
-  bio: "Results-driven Frontend Engineer with 3.5+ years of experience building scalable, performance-focused web applications using React.js, Next.js, and TypeScript. Strong in clean architecture, maintainable code, and delivering seamless user experiences in production environments.",
+  bio: "Frontend Engineer with 3.5+ years of experience building scalable web applications and enterprise dashboards using React, Next.js, and TypeScript. Specialized in developing complex data-driven interfaces, operational platforms, and high-performance UI systems used in production environments.                                 Experienced in building modular component architectures, advanced data tables, role-based access systems, and analytics dashboards while integrating backend APIs efficiently. Focused on performance, maintainability, and scalable frontend architecture.",
   email: "singhkumargaurav420@gmail.com",
   location: "New Delhi, India",
   availability: "Open to opportunities",
@@ -14,6 +14,14 @@ export const personalInfo = {
     twitter: "https://twitter.com/gaurav_kumar_singh",
   },
 };
+
+
+
+
+
+
+
+
 
 // export const skills = [
 //   { name: "React.js", level: 95, category: "frontend" },
@@ -172,16 +180,17 @@ export const experience = [
 export const projects = [
   {
     id: 1,
-    title: "ENGAME – Subscription-Based Widget Commerce Platform",
+    title: "ENGAME – Modular Subscription Commerce Platform",
     description:
-      "Modular, subscription-driven eCommerce platform with embeddable widgets, secure payments, OAuth authentication, and admin analytics.",
+      "A modular eCommerce platform built with Next.js that enables subscription-based product sales through reusable commerce widgets and an admin analytics dashboard.",
     longDescription:
-      "Developed a subscription-based eCommerce platform built around modular, reusable commerce widgets using Next.js, Tailwind CSS, ShadCN, and Zustand. Designed product browsing and checkout as configurable UI modules that can be extended or embedded. Implemented recurring subscription logic with secure payment gateway integration and OAuth (Google) authentication. Built role-based access control for admin and users to manage subscriptions, orders, analytics, and customer data. Optimized routing and performance to ensure fast navigation and scalable user experience. Backend powered by Node.js, Express.js, MongoDB, and Docker for containerized deployment.",
+      "Built a modular subscription-based commerce platform using Next.js and Node.js that allows businesses to sell products through reusable and embeddable commerce widgets. Designed product browsing, checkout, and subscription flows as configurable UI modules to enable flexible integration across different storefronts. Implemented secure payment processing with recurring subscription logic, OAuth authentication (Google), and role-based access control for administrators and customers. Developed an admin dashboard for managing orders, subscriptions, users, and sales analytics. Backend services were built with Node.js, Express, and MongoDB, with Docker used for containerized deployment and environment consistency.",
     image: "/images/engame.jpg",
     tech: [
       "Next.js",
+      "TypeScript",
       "Tailwind CSS",
-      "ShadCN",
+      "ShadCN UI",
       "Zustand",
       "Axios",
       "Node.js",
@@ -190,11 +199,11 @@ export const projects = [
       "Docker",
       "OAuth (Google)",
     ],
-    category: "Web Application",
-    year: "2023-2024",
+    category: "Full Stack Commerce Platform",
+    year: "2023–2024",
     link: "",
     github: "",
-    featured: false,
+    featured: true,
     color: "#0ea5e9",
   },
   {
@@ -274,21 +283,47 @@ export const projects = [
     github: "https://github.com/gauravrajput4201/Portfolio",
     color: "#ec4899",
   },
+  // {
+  //   id: 5,
+  //   title: "Design System",
+  //   description:
+  //     "Comprehensive design system with 50+ components, documentation, and theming support for enterprise products.",
+  //   longDescription:
+  //     "Developed a scalable design system used across multiple products. Includes accessible components, dark mode support, and comprehensive documentation.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=800&q=80",
+  //   tech: ["React", "Storybook", "TypeScript", "Styled Components"],
+  //   category: "Design System",
+  //   year: "2023",
+  //   github: "https://github.com",
+  //   featured: false,
+  //   color: "#10b981",
+  // },
   {
     id: 5,
-    title: "Design System",
+    title: "ShipGlobal – Enterprise Logistics Operations Dashboard",
     description:
-      "Comprehensive design system with 50+ components, documentation, and theming support for enterprise products.",
+      "Enterprise admin platform powering global shipping operations, enabling internal teams to manage exporters, shipments, invoicing, financial workflows, and operational analytics.",
     longDescription:
-      "Developed a scalable design system used across multiple products. Includes accessible components, dark mode support, and comprehensive documentation.",
-    image:
-      "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=800&q=80",
-    tech: ["React", "Storybook", "TypeScript", "Styled Components"],
-    category: "Design System",
-    year: "2023",
-    github: "https://github.com",
+      "Engineered a large-scale internal operations dashboard for ShipGlobal, a cross-border logistics platform used by exporters to ship products worldwide. The system centralizes critical workflows including customer onboarding, shipment processing, invoice generation, wallet transactions, KYC verification, and dispute resolution. Built high-performance operational tables supporting complex filtering, sorting, and bulk actions to manage large shipment datasets. Implemented bulk CSV processing pipelines for operational tasks such as invoice generation, shipment bagging, and inwarding. Designed role-based access control (RBAC) with granular permissions to support multiple internal teams including operations, finance, and support. Developed analytics dashboards and reporting modules to monitor shipment activity, operational metrics, and financial performance. The frontend architecture was built using modular React + TypeScript components with scalable state management and schema-driven validation to ensure maintainability and performance across a multi-module enterprise system.",
+    image: "/images/shipglobal-dashboard.png",
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "ShadCN UI",
+      "Zustand",
+      "TanStack Table",
+      "Recharts",
+      "Axios",
+      "Vite",
+    ],
+    category: "Enterprise Logistics Platform",
+    year: "2024-2025",
+    link: "",
+    github: "",
     featured: false,
-    color: "#10b981",
+    color: "#16a34a",
   },
 ];
 
@@ -331,7 +366,7 @@ export const stats = [
   {
     id: 2,
     icon: Boxes,
-    number: "150+",
+    number: "500+",
     label: "Reusable Components",
     description: "Modular and scalable UI architecture",
   },

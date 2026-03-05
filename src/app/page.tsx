@@ -17,7 +17,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
-        <LoopLogo />
+        {/* <LoopLogo /> */}
         <Experience />
         <Projects />
         <Stats />

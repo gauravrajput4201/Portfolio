@@ -39,7 +39,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
           alt={project.title}
           width={800}
           height={600}
-          className="w-full h-75 object-cover rounded-t-[1.5rem]"
+          className="w-full h-75 object-cover object-top rounded-t-[1.5rem]"
         />
         <div className="p-8">
           <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
