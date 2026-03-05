@@ -85,6 +85,7 @@ const ContactForm = () => {
           className={`p-4 bg-[rgba(255,255,255,0.05)] border ${errors.name ? "border-red-500" : "border-[rgba(255,255,255,0.1)]"} rounded-2xl text-white text-[1rem] font-sans transition-all duration-300 outline-none focus:bg-[rgba(255,255,255,0.08)] focus:border-[#06b6d4] focus:shadow-[0_0_0_3px_rgba(6,182,212,0.1)]`}
           // whileFocus={{ scale: 1.02 }}
           // transition={{ duration: 0.2 }}
+          placeholder="Enter your name"
         />
         {errors.name && (
           <span className="text-red-400 text-xs mt-1">
@@ -106,6 +107,7 @@ const ContactForm = () => {
           className={`p-4 bg-[rgba(255,255,255,0.05)] border ${errors.email ? "border-red-500" : "border-[rgba(255,255,255,0.1)]"} rounded-2xl text-white text-[1rem] font-sans transition-all duration-300 outline-none focus:bg-[rgba(255,255,255,0.08)] focus:border-[#06b6d4] focus:shadow-[0_0_0_3px_rgba(6,182,212,0.1)]`}
           // whileFocus={{ scale: 1.02 }}
           // transition={{ duration: 0.2 }}
+          placeholder="Enter your email"
         />
         {errors.email && (
           <span className="text-red-400 text-xs mt-1">
@@ -127,6 +129,7 @@ const ContactForm = () => {
           className={`p-4 bg-[rgba(255,255,255,0.05)] border ${errors.subject ? "border-red-500" : "border-[rgba(255,255,255,0.1)]"} rounded-2xl text-white text-[1rem] font-sans transition-all duration-300 outline-none focus:bg-[rgba(255,255,255,0.08)] focus:border-[#06b6d4] focus:shadow-[0_0_0_3px_rgba(6,182,212,0.1)]`}
           // whileFocus={{ scale: 1.02 }}
           // transition={{ duration: 0.2 }}
+          placeholder="Enter the subject"
         />
         {errors.subject && (
           <span className="text-red-400 text-xs mt-1">
@@ -148,6 +151,7 @@ const ContactForm = () => {
           className={`p-4 bg-[rgba(255,255,255,0.05)] border ${errors.message ? "border-red-500" : "border-[rgba(255,255,255,0.1)]"} rounded-2xl text-white text-[1rem] font-sans transition-all duration-300 outline-none focus:bg-[rgba(255,255,255,0.08)] focus:border-[#06b6d4] focus:shadow-[0_0_0_3px_rgba(6,182,212,0.1)] resize-vertical min-h-37.5`}
           // whileFocus={{ scale: 1.02 }}
           // transition={{ duration: 0.2 }}
+          placeholder="Enter your message"
         />
         {errors.message && (
           <span className="text-red-400 text-xs mt-1">
